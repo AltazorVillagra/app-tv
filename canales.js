@@ -38,10 +38,10 @@ const CANALES = [
     link:   "https://unlimited1-cl-isp.dps.live/uchiletv/uchiletv.smil/playlist.m3u8",
   },
 
-  // ─────────────── INGLÉS BRITÁNICO ───────────────
+  // ─────────────── Noticieros Ingleses ───────────────
   {
     nombre: "BBC World Service",
-    grupo:  "Inglés británico",
+    grupo:  "Noticieros Ingleses",
     nota:   "Radio de noticias 24 horas · Solo audio",
     logo:   "logos/bbc-world-service.svg",
     fondo:  "#b90005",
@@ -49,12 +49,49 @@ const CANALES = [
   },
   {
     nombre: "BBC News (YouTube)",
-    grupo:  "Inglés británico",
+    grupo:  "Noticieros Ingleses",
     nota:   "Solo cuando transmiten en vivo para Chile",
     logo:   "logos/bbc-news.svg",
     fondo:  "#ffffff",
     link:   "https://www.youtube.com/channel/UC16niRr50-MSBwiO3YDb3RA",
   },
+// ─────────────── Deporte ───────────────
+  {
+     nombre: "ESPN",
+     grupo:  "Deporte",
+     nota:   "Principales eventos deportivos",
+     logo:   "logos/espn.png",
+     fondo:  "#d30d0d",
+     link:   "https://",
+  },
+
+  {
+     nombre: "TyC Sport",
+     grupo:  "Deporte",
+     nota:   "Eventos deportivos de Argentina",
+     logo:   "logos/tyc-sports.svg",
+     fondo:  "#ffffff",
+     link:   "https://",
+  },
+
+  {
+     nombre: "TNT Sport Premium",
+     grupo:  "Deporte",
+     nota:   "Eventos deportivos de Chile",
+     logo:   "logos/tnt-sports.svg",
+     fondo:  "#ffffff",
+     link:   "https://",
+  },
+
+{
+     nombre: "TNT Sport",
+     grupo:  "Deporte",
+     nota:   "Eventos deportivos basicos en Chile",
+     logo:   "logos/tnt-sports.svg",
+     fondo:  "#ffffff",
+     link:   "https://",
+   },
+  
 
   // ─────────────── ESPACIO PARA TUS CANALES NUEVOS ───────────────
   // Copia este bloque, quítale las // del principio y llena los datos:
