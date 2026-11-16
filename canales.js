@@ -50,11 +50,10 @@ const CANALES = [
   {
     nombre: "Mega",
     grupo:  "Chile",
-    nota:   "Se abre en mega.cl (no deja verse dentro de la app)",
+    nota:   "Teleseries, noticias y entretención",
     logo:   "logos/mega.svg",
     fondo:  "#ffffff",
-    tipo:   "enlace",
-    link:   "https://www.mega.cl/senal-en-vivo/",
+    link:   "https://",
   },
 
   // ─────────────── Noticieros Ingleses ───────────────
