@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0e1014">
   <meta name="description" content="Mis canales en vivo: TV e IPTV en el celular">
-  <title>Mi TV</title>
+  <title>Altazor TV</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="icon" type="image/png" href="iconos/icono-192.png">
   <link rel="apple-touch-icon" href="iconos/icono-192.png">
+  <meta name="apple-mobile-web-app-title" content="Altazor TV">
   <link rel="stylesheet" href="estilos.css">
   <script>
     // Guarda los errores de canales.js para mostrarlos en pantalla
@@ -19,7 +20,7 @@
 <body>
 
   <header class="barra">
-    <h1 class="marca"><span class="marca-icono" aria-hidden="true"></span>Mi TV</h1>
+    <h1 class="marca"><img class="marca-icono" src="iconos/icono-192.png" alt="" width="34" height="34">Altazor <span class="marca-tv">TV</span></h1>
     <button id="btn-favoritos" class="chip" type="button" aria-pressed="false">☆ Favoritos</button>
   </header>
 
@@ -48,7 +49,7 @@
   <main id="lista" class="lista"></main>
 
   <footer class="pie">
-    Para agregar canales edita <code>canales.js</code>
+    Desarrollado por <strong>Altazor Villagra</strong>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/hls.js@1/dist/hls.min.js"></script>

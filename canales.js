@@ -9,7 +9,10 @@
 //    link   : la dirección de la señal                      (obligatorio)
 //    grupo  : sección donde aparece, ej. "Chile", "Inglés"  (opcional)
 //    nota   : texto corto bajo el nombre                    (opcional)
-//    logo   : link a una imagen; si no hay, se usan las iniciales (opcional)
+//    logo   : imagen del canal (opcional; si no hay, se usan las iniciales)
+//             puede ser un archivo de la carpeta logos → "logos/micanal.png"
+//             o un link de internet                  → "https://.../logo.png"
+//    fondo  : color detrás del logo, ej. "#003a70" o "white" (opcional)
 //    tipo   : "iptv", "youtube" o "web" (opcional: la app lo adivina por el link)
 //
 //  Qué links sirven:
@@ -30,6 +33,8 @@ const CANALES = [
     nombre: "UChile TV",
     grupo:  "Chile",
     nota:   "Canal de la Universidad de Chile · En vivo",
+    logo:   "logos/uchiletv.png",
+    fondo:  "linear-gradient(135deg, #0b3d91, #062559)",
     link:   "https://unlimited1-cl-isp.dps.live/uchiletv/uchiletv.smil/playlist.m3u8",
   },
 
@@ -38,12 +43,16 @@ const CANALES = [
     nombre: "BBC World Service",
     grupo:  "Inglés británico",
     nota:   "Radio de noticias 24 horas · Solo audio",
+    logo:   "logos/bbc-world-service.svg",
+    fondo:  "#b90005",
     link:   "https://a.files.bbci.co.uk/ms6/live/3441A116-B12E-4D2F-ACA8-C1984642FA4B/audio/simulcast/hls/nonuk/pc_hd_abr_v2/aks/bbc_world_service.m3u8",
   },
   {
     nombre: "BBC News (YouTube)",
     grupo:  "Inglés británico",
     nota:   "Solo cuando transmiten en vivo para Chile",
+    logo:   "logos/bbc-news.svg",
+    fondo:  "#ffffff",
     link:   "https://www.youtube.com/channel/UC16niRr50-MSBwiO3YDb3RA",
   },
 
@@ -54,6 +63,8 @@ const CANALES = [
   //   nombre: "",
   //   grupo:  "",
   //   nota:   "",
+  //   logo:   "logos/",
+  //   fondo:  "#ffffff",
   //   link:   "https://",
   // },
 

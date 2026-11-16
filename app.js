@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════
-//   Mi TV — lógica de la app
+//   Altazor TV — lógica de la app
 //   (Los canales NO van aquí: van en canales.js)
 // ═══════════════════════════════════════════════════════════════════
 (function () {
@@ -41,6 +41,7 @@
       grupo: c.grupo ? String(c.grupo).trim() : "Canales",
       nota: c.nota ? String(c.nota) : "",
       logo: c.logo ? String(c.logo).trim() : "",
+      fondo: c.fondo ? String(c.fondo).trim() : "",
       tipo: String(c.tipo || detectarTipo(c.link)).toLowerCase(),
     }));
 
@@ -130,7 +131,7 @@
   }
 
   function pintarLogo(caja, c) {
-    caja.style.background = colorDe(c.nombre);
+    caja.style.background = c.fondo || colorDe(c.nombre);
     if (c.logo) {
       const img = document.createElement("img");
       img.alt = c.nombre;
@@ -340,7 +341,7 @@
     if (!("mediaSession" in navigator) || c.tipo !== "iptv") return;
     navigator.mediaSession.metadata = new MediaMetadata({
       title: c.nombre,
-      artist: c.nota || "Mi TV",
+      artist: c.nota || "Altazor TV",
       artwork: [{ src: "iconos/icono-512.png", sizes: "512x512", type: "image/png" }],
     });
   }

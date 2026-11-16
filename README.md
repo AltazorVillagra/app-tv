@@ -1,4 +1,4 @@
-# 📺 Mi TV
+# 📺 Altazor TV
 
 App para ver canales en vivo en el celular (TV, IPTV y YouTube).
 Se instala desde el navegador, sin APK ni Play Store.
@@ -65,7 +65,7 @@ En VS Code:
 ---
 
 ## Probarla en el PC antes de subirla
-En VS Code: **Ctrl + Shift + D** → **▶ Probar Mi TV** (o F5).
+En VS Code: **Ctrl + Shift + D** → **▶ Probar Altazor TV** (o F5).
 - PC: http://localhost:8000
 - Celular (misma red WiFi): `http://<IP del PC>:8000`
 
@@ -80,4 +80,5 @@ Para detenerla: botón ⏹ rojo de VS Code.
 | `index.html` | La estructura de la página |
 | `estilos.css` | Colores y diseño (los colores están arriba del todo) |
 | `app.js` | Reproductor, favoritos y avisos de error |
+| `logos/` | Logos de los canales (pon aquí el de cada canal nuevo) |
 | `manifest.webmanifest`, `sw.js`, `iconos/` | Para que se pueda instalar como app |
