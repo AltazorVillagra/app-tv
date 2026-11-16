@@ -1,0 +1,14 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "▶ Probar Mi TV en el PC y el celular (puerto 8000)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "http.server",
+      "args": ["8000", "--bind", "0.0.0.0"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ]
+}
