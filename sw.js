@@ -1,7 +1,7 @@
 // Service worker: permite instalar la app y que abra rápido.
 // Siempre busca primero la versión nueva en internet (así tus canales
 // nuevos aparecen altiro); si no hay conexión, usa la copia guardada.
-const CACHE = "altazortv-v3";
+const CACHE = "altazortv-v4";
 const ARCHIVOS = [
   "./",
   "index.html",
@@ -9,9 +9,9 @@ const ARCHIVOS = [
   "app.js",
   "canales.js",
   "manifest.webmanifest",
-  "iconos/icono-192.png",
-  "iconos/icono-512.png",
-  "iconos/icono-maskable-512.png",
+  "iconos/altazor-tv-v2-192.png",
+  "iconos/altazor-tv-v2-512.png",
+  "iconos/altazor-tv-v2-maskable-512.png",
 ];
 
 self.addEventListener("install", (e) => {

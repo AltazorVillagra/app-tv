@@ -342,7 +342,7 @@
     navigator.mediaSession.metadata = new MediaMetadata({
       title: c.nombre,
       artist: c.nota || "Altazor TV",
-      artwork: [{ src: "iconos/icono-512.png", sizes: "512x512", type: "image/png" }],
+      artwork: [{ src: "iconos/altazor-tv-v2-512.png", sizes: "512x512", type: "image/png" }],
     });
   }
 
