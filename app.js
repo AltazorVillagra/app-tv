@@ -101,7 +101,7 @@
 
     const etiqueta = document.createElement("span");
     etiqueta.className = "etiqueta " + c.tipo;
-    etiqueta.textContent = { iptv: "En vivo", youtube: "YouTube", web: "Web" }[c.tipo] || c.tipo;
+    etiqueta.textContent = { iptv: "En vivo", youtube: "YouTube", web: "Web", enlace: "Abre su sitio ↗" }[c.tipo] || c.tipo;
 
     t.append(logo, etiqueta, nombre);
 
@@ -146,6 +146,11 @@
 
   // ─────────── 3. Reproducir ───────────
   function reproducir(c) {
+    // Canales que no dejan ver su señal dentro de otras apps: se abre su sitio oficial
+    if (c.tipo === "enlace") {
+      window.open(c.link, "_blank", "noopener");
+      return;
+    }
     detener();
     actual = c;
     reproductor.hidden = false;

@@ -41,6 +41,7 @@ Todo está en **`canales.js`**. No hay que tocar ningún otro archivo.
 | YouTube (un video en vivo) | `https://www.youtube.com/watch?v=XXXXXXXXXXX` |
 | YouTube (un canal) | `https://www.youtube.com/channel/UC...` (los de `@nombre` no sirven) |
 | Página del canal | Su reproductor "embed", con `tipo: "web"` |
+| Canal que no deja verse en otras apps | Su página oficial en vivo, con `tipo: "enlace"` (se abre en Chrome) |
 
 ⚠️ **Tiene que empezar con `https://`** (con "s"). Los `http://` no funcionan en una app publicada.
 

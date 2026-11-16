@@ -13,7 +13,9 @@
 //             puede ser un archivo de la carpeta logos → "logos/micanal.png"
 //             o un link de internet                  → "https://.../logo.png"
 //    fondo  : color detrás del logo, ej. "#003a70" o "white" (opcional)
-//    tipo   : "iptv", "youtube" o "web" (opcional: la app lo adivina por el link)
+//    tipo   : "iptv", "youtube", "web" o "enlace" (opcional: la app lo adivina por el link)
+//             "enlace" = canales que no dejan ver su señal en otras apps:
+//             al tocarlo se abre su página oficial en vivo en Chrome
 //
 //  Qué links sirven:
 //    IPTV    → terminan en .m3u8        https://servidor.com/canal/playlist.m3u8
@@ -36,6 +38,23 @@ const CANALES = [
     logo:   "logos/uchiletv.png",
     fondo:  "linear-gradient(135deg, #0b3d91, #062559)",
     link:   "https://unlimited1-cl-isp.dps.live/uchiletv/uchiletv.smil/playlist.m3u8",
+  },
+  {
+    nombre: "Bío Bío TV",
+    grupo:  "Chile",
+    nota:   "Noticias y programas · En vivo",
+    logo:   "logos/biobiotv.png",
+    fondo:  "#ffffff",
+    link:   "https://redirector.rudo.video/hls-video/339f69c6122f6d8f4574732c235f09b7683e31a5/bbtv/bbtv.smil/playlist.m3u8?did=",
+  },
+  {
+    nombre: "Mega",
+    grupo:  "Chile",
+    nota:   "Se abre en mega.cl (no deja verse dentro de la app)",
+    logo:   "logos/mega.svg",
+    fondo:  "#ffffff",
+    tipo:   "enlace",
+    link:   "https://www.mega.cl/senal-en-vivo/",
   },
 
   // ─────────────── Noticieros Ingleses ───────────────

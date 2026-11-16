@@ -291,6 +291,7 @@ html, body {
 }
 .etiqueta.youtube { background: rgba(255, 0, 0, 0.15); color: #ff6b6b; }
 .etiqueta.web { background: rgba(120, 160, 255, 0.15); color: #8fb0ff; }
+.etiqueta.enlace { background: rgba(166, 77, 255, 0.18); color: #c9a6ff; }
 
 .estrella {
   position: absolute;
