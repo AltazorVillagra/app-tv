@@ -1,7 +1,7 @@
 // Service worker: permite instalar la app y que abra rápido.
 // Siempre busca primero la versión nueva en internet (así tus canales
 // nuevos aparecen altiro); si no hay conexión, usa la copia guardada.
-const CACHE = "altazortv-v4";
+const CACHE = "altazortv-v5";
 const ARCHIVOS = [
   "./",
   "index.html",
@@ -15,7 +15,12 @@ const ARCHIVOS = [
 ];
 
 self.addEventListener("install", (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(ARCHIVOS)).then(() => self.skipWaiting()));
+  // cache: "reload" = pedirlo siempre fresco a internet, nunca una copia vieja del navegador
+  e.waitUntil(
+    caches.open(CACHE)
+      .then((c) => c.addAll(ARCHIVOS.map((u) => new Request(u, { cache: "reload" }))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener("activate", (e) => {
@@ -32,12 +37,12 @@ self.addEventListener("fetch", (e) => {
   if (e.request.method !== "GET" || url.origin !== location.origin) return;
 
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request, { cache: "no-cache" }) // siempre confirma con internet si hay versión nueva
       .then((resp) => {
         const copia = resp.clone();
         caches.open(CACHE).then((c) => c.put(e.request, copia));
         return resp;
       })
-      .catch(() => caches.match(e.request))
+      .catch(() => caches.match(e.request, { ignoreSearch: true }))
   );
 });
