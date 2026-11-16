@@ -1,7 +1,7 @@
 // Service worker: permite instalar la app y que abra rápido.
 // Siempre busca primero la versión nueva en internet (así tus canales
 // nuevos aparecen altiro); si no hay conexión, usa la copia guardada.
-const CACHE = "altazortv-v2";
+const CACHE = "altazortv-v3";
 const ARCHIVOS = [
   "./",
   "index.html",
