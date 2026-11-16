@@ -66,7 +66,7 @@ const CANALES = [
   },
 
   {
-     nombre: "TyC Sport",
+     nombre: "TyC Sports",
      grupo:  "Deporte",
      nota:   "Eventos deportivos de Argentina",
      logo:   "logos/tyc-sports.svg",
@@ -75,7 +75,7 @@ const CANALES = [
   },
 
   {
-     nombre: "TNT Sport Premium",
+     nombre: "TNT Sports Premium",
      grupo:  "Deporte",
      nota:   "Eventos deportivos de Chile",
      logo:   "logos/tnt-sports.svg",
@@ -84,7 +84,7 @@ const CANALES = [
   },
 
 {
-     nombre: "TNT Sport",
+     nombre: "TNT Sports",
      grupo:  "Deporte",
      nota:   "Eventos deportivos basicos en Chile",
      logo:   "logos/tnt-sports.svg",
